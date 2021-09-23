@@ -1,0 +1,37 @@
+.description-side {
+  /*height: 100%;*/
+  flex: 0 1 62%;
+  background: url(../assets/img/right_background.png) 0 0/100% 100% no-repeat;
+  padding: 4% 0 4% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 36px;
+  width: 160px;
+  background: url(../assets/img/Main_logo.png) 0 0/100% 100% no-repeat;
+}
+
+.text {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+}
+
+.video__link {
+  color: #1f8efa;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 1.5%;
+}
+
+.video__img {
+  background: url(../assets/img/Play_Button.png) 0 0/100% 100% no-repeat;
+}
