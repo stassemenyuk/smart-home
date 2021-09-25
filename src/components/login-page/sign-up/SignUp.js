@@ -8,12 +8,15 @@ export default class SignUp extends Component {
         email: '',
         password: '',
         username: '',
+        confirmation: '',
       },
       success: '',
+      error: '',
     };
     this.changeEmail = this.changeEmail.bind(this);
     this.changePassword = this.changePassword.bind(this);
     this.changeUsername = this.changeUsername.bind(this);
+    this.changeConfirmation = this.changeConfirmation.bind(this);
     this.submitRegistrationForm = this.submitRegistrationForm.bind(this);
   }
 
@@ -21,33 +24,43 @@ export default class SignUp extends Component {
     const newData = JSON.parse(JSON.stringify(this.state.data));
     newData.email = e.target.value;
     this.setState({ data: newData });
-    this.setState({ success: '' });
+    this.setState({ success: '', error: '' });
   }
   changePassword(e) {
     const newData = JSON.parse(JSON.stringify(this.state.data));
     newData.password = e.target.value;
     this.setState({ data: newData });
-    this.setState({ success: '' });
+    this.setState({ success: '', error: '' });
   }
   changeUsername(e) {
     const newData = JSON.parse(JSON.stringify(this.state.data));
     newData.username = e.target.value;
     this.setState({ data: newData });
-    this.setState({ success: '' });
+    this.setState({ success: '', error: '' });
+  }
+  changeConfirmation(e) {
+    const newData = JSON.parse(JSON.stringify(this.state.data));
+    newData.confirmation = e.target.value;
+    this.setState({ data: newData });
+    this.setState({ success: '', error: '' });
   }
 
   submitRegistrationForm(e) {
     e.preventDefault();
-    console.log(this.state.data);
-    localStorage.setItem(this.state.data.email, JSON.stringify(this.state.data));
-    this.setState({
-      data: {
-        email: '',
-        password: '',
-        username: '',
-      },
-      success: 'Successfull registration!',
-    });
+    if (this.state.data.confirmation === this.state.data.password) {
+      localStorage.setItem(this.state.data.email, JSON.stringify(this.state.data));
+      this.setState({
+        data: {
+          email: '',
+          password: '',
+          username: '',
+          confirmation: '',
+        },
+        success: 'Successfull registration!',
+      });
+    } else {
+      this.setState({ error: 'Confirm your password' });
+    }
   }
 
   render() {
@@ -84,11 +97,13 @@ export default class SignUp extends Component {
           <div className="confirm form_element">
             <label htmlFor="confirm_up">Confirm Password</label>
             <input
+              onChange={this.changeConfirmation}
               type="password"
               className="blue default_input"
               id="confirm_up"
               placeholder="Placeholder"
               required
+              value={this.state.data.confirmation}
             />
             <div className="error"></div>
           </div>
@@ -114,6 +129,7 @@ export default class SignUp extends Component {
             Agreement, Privacy Policy, and Cookie Policy
           </div>
           <div className="form-success">{this.state.success}</div>
+          <div className="form-error">{this.state.error}</div>
         </form>
         <div className="form_block__footer">
           <div className="dont__have">
