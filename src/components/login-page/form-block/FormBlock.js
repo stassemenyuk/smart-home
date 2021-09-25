@@ -25,14 +25,14 @@ export default class FormBlock extends Component {
     const { currentForm } = this.state;
     let Form;
     if (currentForm === 'sign-in') {
-      Form = <SignIn handleForm={this.handleForm} />;
+      Form = <SignIn handleForm={this.handleForm} autenficate={this.props.autenficate} />;
     } else {
       Form = <SignUp handleForm={this.handleForm} />;
     }
     return (
-      <div class="form-side">
-        <div class="form_block">
-          <div class="form_block__logo"></div>
+      <div className="form-side">
+        <div className="form_block">
+          <div className="form_block__logo"></div>
           {Form}
         </div>
       </div>

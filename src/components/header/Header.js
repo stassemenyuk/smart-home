@@ -106,7 +106,10 @@ export default class Header extends Component {
               />
             </svg>
           </div>
-          <div className="user__profile">Username</div>
+          <div className="user__profile">{this.props.username}</div>
+          <div className="log_out" onClick={this.props.logOut}>
+            Log Out
+          </div>
         </div>
       </header>
     );

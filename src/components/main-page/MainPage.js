@@ -9,7 +9,7 @@ export default class MainPage extends Component {
     // let CurrentPage = '';
     return (
       <div className="wrapper">
-        <Header />
+        <Header username={this.props.username} logOut={this.props.logOut} />
         <OverviewPage />
       </div>
     );

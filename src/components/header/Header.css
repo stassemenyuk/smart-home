@@ -64,3 +64,12 @@
 .active_notification {
   fill: #1f8efa;
 }
+
+.log_out {
+  font-size: 10px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

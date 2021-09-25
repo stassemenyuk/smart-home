@@ -135,7 +135,14 @@ button {
   color: #e60f0f;
 }
 
-.error {
+.form-error {
   font-size: 12px;
   color: #e60f0f;
+  text-align: center;
+}
+
+.form-success {
+  font-size: 12px;
+  color: #53e60f;
+  text-align: center;
 }

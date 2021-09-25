@@ -9,7 +9,7 @@ export default class LoginPage extends Component {
     return (
       <div className="main">
         <DescriptionSide />
-        <FormBlock />
+        <FormBlock autenficate={this.props.autenficate} />
       </div>
     );
   }
