@@ -1,0 +1,133 @@
+.consumption {
+  flex: 0 0 44.3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.consumption__by-room,
+.consumption__by-day,
+.consumption__device-limit {
+  background: #2f3b52;
+  box-shadow: 0 6px 13px 0 rgba(21, 33, 56, 0.53);
+}
+
+.consumption__by-room {
+  flex: 1 1 100%;
+  margin-bottom: 1%;
+}
+
+.consumption__by-day {
+  flex: 1 1 49.5%;
+  margin-right: 1%;
+}
+
+.consumption__device-limit {
+  flex: 1 1 49.5%;
+}
+
+.consumption__by-day__content,
+.consumption__device-limit__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consumption__by-room__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.donut__main {
+  fill: #fff;
+  font: 300 7px Roboto;
+}
+
+.donut__under {
+  font: 300 3px Roboto;
+  fill: #869aac;
+  text-transform: uppercase;
+}
+
+.consumption__device-limit__content__circle,
+.consumption__by-day__content__graph {
+  display: flex;
+  justify-content: center;
+}
+
+.device-limit__big {
+  font: 300 15px Roboto;
+  fill: #fff;
+}
+.device-limit__small {
+  font: 300 3px Roboto;
+  fill: #fff;
+}
+
+.days {
+  font: 300 9px Roboto;
+  fill: #fff;
+  text-transform: uppercase;
+}
+
+.bars {
+  width: 70%;
+}
+
+.room-list,
+.percentage-list {
+  list-style-type: none;
+}
+
+.percentage-list li {
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.room-list li {
+  margin-bottom: 13px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.room-list li::before {
+  content: '';
+  float: left;
+  margin: 0 10px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+
+.room-list li:nth-child(1)::before {
+  background: #05c985;
+}
+
+.room-list li:nth-child(2)::before {
+  background: #ffab4f;
+}
+
+.room-list li:nth-child(3)::before {
+  background: #ee423d;
+}
+
+.room-list li:nth-child(4)::before {
+  background: #1f8efa;
+}
+
+.room-list li:nth-child(5)::before {
+  background: #843fa0;
+}
+
+.see-more__btn {
+  border: none;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  background: #3e4e6c;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 200;
+  cursor: pointer;
+}

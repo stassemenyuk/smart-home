@@ -1,0 +1,48 @@
+.status {
+  flex: 1 1 100%;
+  margin-top: 0.5%;
+}
+
+.status__blocks {
+  padding: 0.5% 0 1.5%;
+  display: flex;
+}
+
+.status__block {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status__block__header {
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  color: #869aac;
+  text-transform: uppercase;
+}
+
+.status__block__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.status__number {
+  font-size: 40px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.status__measures__text {
+  color: #98a7b9;
+  margin-bottom: 10px;
+}
+
+.status__measures__icon svg {
+  width: 9.33px;
+  height: 9.33px;
+  fill: #869aac;
+}

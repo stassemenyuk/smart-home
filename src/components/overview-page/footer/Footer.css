@@ -1,0 +1,138 @@
+.footer {
+  flex: 0 0 auto;
+  border-top: 3px #2f3b52 solid;
+  padding: 1.25%;
+}
+
+.footer-cards {
+  display: flex;
+}
+
+.footer-card__add-new {
+  flex: 1 1 7%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px dashed #2f3b52;
+  box-shadow: 0 6px 13px 0 rgba(21, 33, 56, 0.53);
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-card {
+  border-radius: 5px;
+  background-color: #2f3b52;
+  box-shadow: 0 6px 13px 0 rgba(21, 33, 56, 0.53);
+  flex: 1 1 13%;
+  margin-right: 1.5%;
+}
+
+.footer-card__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4%;
+}
+
+.footer-card__content__icon svg {
+  fill: #869aac;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-card__content__switcher {
+  align-self: flex-start;
+}
+
+.footer-card__content__text {
+  color: #98a7b9;
+}
+
+.footer-card__content__text__title {
+  font-size: 15px;
+}
+
+.active__card .footer-card__content__text {
+  color: #1f8efa;
+}
+
+.active__card .footer-card__content__text__title {
+  color: #fff;
+}
+
+.active__card svg {
+  fill: #fff;
+}
+
+.active__card svg .blue {
+  fill: #1f8efa;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 13px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #20293c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 13px;
+  width: 13px;
+  background-color: #70889e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 7px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.add_new {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add_new svg {
+  width: 42px;
+  height: 42px;
+}

@@ -11,7 +11,7 @@ export default class DescriptionSide extends Component {
           Control your home <br />
           Connect your life
         </div>
-        <a href="#">
+        <a href="https://www.google.com.ua/?hl=ru">
           <div className="video">
             <div className="video__img"></div>
             <div className="video__link">See how it works</div>

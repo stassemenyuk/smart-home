@@ -1,0 +1,84 @@
+.status,
+.camera {
+  background: #2f3b52;
+  box-shadow: 0 6px 13px 0 rgba(21, 33, 56, 0.53);
+}
+
+.camera {
+  flex: 0 0 55%;
+  margin-right: 0.7%;
+}
+
+.camera__header {
+  position: relative;
+}
+
+.camera__content__video {
+  max-width: 100%;
+  position: relative;
+}
+
+.camera__video {
+  width: 100%;
+  background: url(./img/camera.jpg) 100% 100% no-repeat;
+}
+
+.cameras_time {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  top: 14px;
+  left: 7.5px;
+  display: flex;
+  font-weight: 200;
+}
+
+.switcher {
+  display: flex;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #242e42;
+  padding: 5px;
+  right: 20%;
+  top: 12%;
+}
+
+.switcher__btn {
+  font-weight: 200;
+  border-radius: 3px;
+  border: none;
+  background: transparent;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+
+.switcher__btn__active {
+  color: #fff;
+  background: #1f8efa;
+}
+
+.recording {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 17px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  padding: 5px;
+}
+
+.recording__icon {
+  margin-right: 5px;
+  align-self: center;
+}
+
+.recording__icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.date {
+  margin-right: 20px;
+}

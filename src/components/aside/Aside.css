@@ -1,0 +1,58 @@
+.aside__links {
+  margin-top: 25px;
+}
+
+.aside__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5% 0;
+}
+
+.aside__link div {
+  margin-left: 20px;
+}
+
+.aside__link__active div {
+  margin-left: 12px;
+}
+
+.aside__link__active {
+  border-radius: 0 8px 8px 0;
+  background-color: rgba(19, 26, 39, 0.2);
+  border-left: 8px solid #1f8efa;
+  color: #1f8efa;
+  transition: 0.5s;
+}
+
+.aside__link__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #98a7b9;
+}
+
+aside {
+  font-family: 'Roboto', sans-serif;
+  color: #869aac;
+  font-size: 12px;
+  padding-top: 2%;
+  flex: 0 0 13.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__home-name,
+.aside__logo,
+.aside__home-address {
+  align-self: center;
+}
+
+.aside__home-name {
+  font-size: 17px;
+}
+
+.aside__logo {
+  background: url(../main-page/img/home_imageoverview.png) no-repeat;
+  width: 90px;
+  height: 90px;
+}

@@ -1,0 +1,66 @@
+.header {
+  border-bottom: 2px solid #20293c;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  color: #869aac;
+  font-size: 12px;
+}
+
+.header__logo {
+  padding: 0.4% 1.6% 1.5% 3.2%;
+  border-right: 2px solid #20293c;
+}
+
+.header__logo__img {
+  background: url(../login-page/img/Main_logo.png) no-repeat;
+  width: 160px;
+}
+
+.header__menu {
+  padding: 25px;
+}
+
+.header__right {
+  flex: 0 1 auto;
+  width: 100%;
+  border-left: 2px solid #20293c;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user svg {
+  width: 20px;
+  height: 20px;
+  fill: #657d95;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  padding: 25px 50px;
+  align-items: center;
+}
+
+.user div {
+  margin: 0 10px;
+}
+
+.user svg {
+  width: 20px;
+  height: 20px;
+  fill: #657d95;
+  cursor: pointer;
+}
+
+.user__storage {
+  display: flex;
+  align-items: center;
+}
+
+.user__storage svg {
+  cursor: initial;
+}
+
+.active_notification {
+  fill: #1f8efa;
+}
