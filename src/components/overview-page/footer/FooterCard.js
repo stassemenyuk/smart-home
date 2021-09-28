@@ -4,11 +4,9 @@ export default class FooterCard extends Component {
   render() {
     const { title, date, icon, active, turnOn, id } = this.props;
     let classNames = 'footer-card',
-      activeMessage,
-      input = <input onChange={() => turnOn(id)} type="checkbox" />;
+      activeMessage;
     if (active) {
       classNames += ' active__card';
-      input = <input onChange={() => turnOn(id)} type="checkbox" checked />;
       activeMessage = 'Active since';
     } else {
       activeMessage = 'Inactive since';
@@ -24,7 +22,7 @@ export default class FooterCard extends Component {
           </div>
           <div className="footer-card__content__switcher">
             <label className="switch">
-              {input}
+              <input onChange={() => turnOn(id)} type="checkbox" checked={active} />
               <span className="slider round"></span>
             </label>
           </div>
