@@ -18,6 +18,7 @@ export default class Aside extends Component {
     this.setState({
       active: newArr,
     });
+    this.props.changeActivePage(id);
   }
 
   render() {

@@ -18,6 +18,7 @@
   font-size: 50px;
   font-weight: 300;
   line-height: 60px;
+  color: #fff;
 }
 
 .video {
@@ -34,4 +35,6 @@
 
 .video__img {
   background: url(../img/Play_Button.png) 0 0/100% 100% no-repeat;
+  width: 37px;
+  height: 37px;
 }
