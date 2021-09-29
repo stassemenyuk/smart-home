@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/smart-home/static/css/main.b1a262ce.chunk.css",
+    "main.js": "/smart-home/static/js/main.e4b66445.chunk.js",
+    "main.js.map": "/smart-home/static/js/main.e4b66445.chunk.js.map",
+    "runtime-main.js": "/smart-home/static/js/runtime-main.2927a9e9.js",
+    "runtime-main.js.map": "/smart-home/static/js/runtime-main.2927a9e9.js.map",
+    "static/js/2.a60a61ae.chunk.js": "/smart-home/static/js/2.a60a61ae.chunk.js",
+    "static/js/2.a60a61ae.chunk.js.map": "/smart-home/static/js/2.a60a61ae.chunk.js.map",
+    "static/js/3.7663901a.chunk.js": "/smart-home/static/js/3.7663901a.chunk.js",
+    "static/js/3.7663901a.chunk.js.map": "/smart-home/static/js/3.7663901a.chunk.js.map",
+    "index.html": "/smart-home/index.html",
+    "static/css/main.b1a262ce.chunk.css.map": "/smart-home/static/css/main.b1a262ce.chunk.css.map",
+    "static/js/2.a60a61ae.chunk.js.LICENSE.txt": "/smart-home/static/js/2.a60a61ae.chunk.js.LICENSE.txt",
+    "static/media/Aside.css": "/smart-home/static/media/home_imageoverview.0cf98488.png",
+    "static/media/DescriptionSide.css": "/smart-home/static/media/right_background.f18eaa4e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2927a9e9.js",
+    "static/js/2.a60a61ae.chunk.js",
+    "static/css/main.b1a262ce.chunk.css",
+    "static/js/main.e4b66445.chunk.js"
+  ]
+}
