@@ -14,7 +14,27 @@ export default function DeviceBlock(props) {
       </td>
       <td>{props.battery}</td>
       <td>{props.date}</td>
-      <td></td>
+      <td>
+        <div className="options">
+          <svg viewBox="0 0 384 384">
+            <g>
+              <g>
+                <circle cx="192" cy="42.667" r="42.667" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <circle cx="192" cy="192" r="42.667" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <circle cx="192" cy="341.333" r="42.667" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </td>
     </tr>
   );
 }

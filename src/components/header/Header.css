@@ -12,7 +12,7 @@
 }
 
 .header__logo__img {
-  background: url(../login-page/img/Main_logo.png) no-repeat;
+  background: url(../login-page/img/Main_logo.png) no-repeat 100% 100%;
   width: 160px;
   height: 36px;
 }
@@ -73,4 +73,16 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 450px) {
 }

@@ -38,3 +38,27 @@
   width: 37px;
   height: 37px;
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 450px) {
+  .description-side {
+    flex: 0 1 40%;
+  }
+
+  .logo {
+    height: 27px;
+    width: 120px;
+  }
+  .text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
