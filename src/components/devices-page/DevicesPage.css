@@ -1,5 +1,5 @@
 .devices-table {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
   background-color: #2f3b52;
 }
@@ -9,19 +9,13 @@
   font-size: 17px;
   font-weight: 300;
   color: #fff;
-  padding: 30px;
-}
-
-.devices-table th:first-child,
-.devices-table tr td:first-child {
-  padding-left: 15px;
-  padding-right: 30px;
+  padding: 3% 2%;
 }
 
 .devices-table td {
   font-size: 17px;
   color: #70889e;
-  padding: 30px 30px;
+  padding: 3% 2%;
 }
 
 td {

@@ -57,7 +57,7 @@ aside {
   height: 90px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 992px) {
   aside {
     width: 100%;
   }
