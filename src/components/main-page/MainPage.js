@@ -56,7 +56,7 @@ export default class MainPage extends Component {
         CurrentPageFooter = '';
         break;
       default:
-        CurrentPage = '';
+        CurrentPage = <EmptyPage />;
         CurrentPageFooter = '';
     }
     return (
@@ -70,4 +70,12 @@ export default class MainPage extends Component {
       </div>
     );
   }
+}
+
+function EmptyPage() {
+  return (
+    <div className="empty-page">
+      <div className="empty-page__text">Sorry , this page is not finished yet :(</div>
+    </div>
+  );
 }

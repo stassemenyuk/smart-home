@@ -30,3 +30,10 @@ td {
   width: 83px;
   height: 83px;
 }
+
+@media (max-width: 450px) {
+  .devices-table th,
+  .devices-table td {
+    font-size: 12px;
+  }
+}
