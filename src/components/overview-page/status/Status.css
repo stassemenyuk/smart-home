@@ -6,6 +6,7 @@
 .status__blocks {
   padding: 0.5% 0 1.5%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .status__block {
@@ -45,4 +46,10 @@
   width: 9.33px;
   height: 9.33px;
   fill: #869aac;
+}
+
+@media (max-width: 450px) {
+  .status__number {
+    font-size: 25px;
+  }
 }

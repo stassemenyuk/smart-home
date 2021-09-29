@@ -68,3 +68,25 @@ main {
   flex-wrap: wrap;
   margin-top: 1%;
 }
+
+@media (max-width: 992px) {
+  .main__content {
+    width: 100%;
+    padding: 1% 5% 1% 2%;
+  }
+  .camera {
+    flex: 0 0 100%;
+  }
+  .consumption {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    flex-direction: column;
+  }
+  .camera {
+    display: none;
+  }
+}

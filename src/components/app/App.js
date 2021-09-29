@@ -2,7 +2,7 @@ import './App.css';
 import LoginPage from '../login-page/LoginPage';
 import React, { Component } from 'react';
 import MainPage from '../main-page/MainPage';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Route, Redirect } from 'react-router';
 
 export default class App extends Component {

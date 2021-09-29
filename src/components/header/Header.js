@@ -10,7 +10,6 @@ export default class Header extends Component {
           <div className="header__logo__img"></div>
         </div>
         <div className="header__menu">asf</div>
-        <div className="header__right"></div>
         <div className="user">
           <div className="user__storage">
             <div className="user__storage__icon">
